@@ -22,14 +22,8 @@ COPY jppianta_defconfig ./configs/
 RUN mkdir ./board/jppianta/
 COPY jppianta_linux.config ./board/jppianta/
 
-# Execute qemu_x86 config
-RUN make qemu_x86_defconfig
-
 # Exexute custom configs
 RUN make jppianta_defconfig
 
 # Compile all
 RUN make
-
-# Source aliases
-CMD [ "source", "/alias.sh" ]

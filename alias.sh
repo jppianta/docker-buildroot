@@ -1,3 +1,3 @@
 #!/bin/bash
 
-alias emulate_qemu='qemu-system-i386 --kernel buildroot/output/images/bzImage --hda buildroot/output/images/rootfs.ext2 --nographic --append "console=ttyS0 root=/dev/sda"'
+alias emulate_qemu='qemu-system-i386 --kernel /buildroot/output/images/bzImage --hda /buildroot/output/images/rootfs.tar --nographic --append "console=ttyS0 root=/dev/sda"'
